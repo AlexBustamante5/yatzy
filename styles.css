@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 1vh;
+}
+
+#game-container{
+    height: 60vh;
+    width: auto;
+    border: 2px solid;
+    margin: 5%;
+    padding: 5vw;
+    padding-top: 2%;
+    
+}
+#dice-container{
+    height: 50vh;
+    width: auto;
+    border: 2px dashed black;
+    
+}
+
+.dice{
+    border: solid 2px;
+    height: 25vh;
+    width: 25vh;
+    margin: 3vh;
+    margin-top: 10vh;
+    display:inline-block; /* Align rectangles side by side */
+    border-radius: 5%; /*make dice corners round*/
+}
+
