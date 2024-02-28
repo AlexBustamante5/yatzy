@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+}
 
 h1{
     text-align: center;
     margin: 1vh;
+    color: white;
 }
 
 #game-container{
     height: 60vh;
     width: auto;
-    border: 2px solid;
+    border: 2px solid white;
     margin: 5%;
     padding: 5vw;
     padding-top: 2%;
@@ -20,17 +24,22 @@ h1{
 #dice-container{
     height: 50vh;
     width: auto;
-    border: 2px dashed black;
+    border: 2px dashed white;
     
 }
 
 .dice{
-    border: solid 2px;
+    border: solid 2px white;
     height: 25vh;
     width: 25vh;
     margin: 3vh;
     margin-top: 10vh;
     display:inline-block; /* Align rectangles side by side */
     border-radius: 5%; /*make dice corners round*/
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 40px;
+
 }
 
