@@ -13,8 +13,8 @@ h1{
 }
 
 #game-container{
-    height: 60vh;
-    width: auto;
+    height: 50%;
+    width: 80%;
     border: 2px solid white;
     margin: 5%;
     padding: 5vw;
@@ -22,7 +22,7 @@ h1{
     
 }
 #dice-container{
-    height: 50vh;
+    height: 50%;
     width: auto;
     border: 2px dashed white;
     
@@ -30,7 +30,7 @@ h1{
 
 .dice{
     border: solid 2px white;
-    height: 25vh;
+    height: 20vh;
     width: 25vh;
     margin: 3vh;
     margin-top: 10vh;
@@ -39,7 +39,7 @@ h1{
     color: white;
     text-align: center;
     font-size: 6rem;
-    padding-top: 40px;
+    padding-top: 5vh;
 
 }
 
