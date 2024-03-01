@@ -29,6 +29,7 @@ h1{
 }
 
 .dice{
+    position: relative;
     border: solid 2px white;
     height: 20vh;
     width: 25vh;
@@ -41,5 +42,14 @@ h1{
     font-size: 6rem;
     padding-top: 5vh;
 
+}
+
+.keep{
+    position: absolute;
+    top :0;
+    right: 0;
+    margin-right: 5px; /* Adjust spacing from the right edge */
+    margin-top: 5px; /* Adjust spacing from the top edge */
+    
 }
 

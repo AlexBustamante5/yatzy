@@ -17,14 +17,14 @@ function rollDice(numberOfDice) {
 
 function displayResults(rolls) {
     rolls.forEach((result, index) => {
-        const diceElement = document.getElementById(`dice-${index + 1}`);
+        const diceElement = document.querySelector(`#dice-${index + 1} span`);
         diceElement.textContent = result; // Updates each dice display
     });
 }
 
 function resetDice() {
-    for (let i = 1; i <= 5; i++) {
-        const diceElement = document.getElementById(`dice-${i}`);
+    for (let i = 0; i <= 5; i++) {
+        const diceElement = document.querySelector(`#dice-${i + 1} span`);
         diceElement.textContent = ''; // Clears each dice display
     }
 }
