@@ -4,13 +4,15 @@
 }
 body{
     background-color: black;
-}
-
-h1{
-    text-align: center;
-    margin: 1vh;
     color: white;
 }
+
+h1, h2{
+    text-align: center;
+    margin: 1vh;
+    
+}
+
 
 #game-container{
     height: 50%;
@@ -37,7 +39,6 @@ h1{
     margin-top: 10vh;
     display:inline-block; /* Align rectangles side by side */
     border-radius: 5%; /*make dice corners round*/
-    color: white;
     text-align: center;
     font-size: 6rem;
     padding-top: 5vh;
