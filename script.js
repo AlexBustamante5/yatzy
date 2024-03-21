@@ -1,5 +1,9 @@
 document.getElementById('roll-dice').addEventListener('click', function() {
-    rollNotSelectedDice();
+
+    if(rolls_left >0){
+        rollNotSelectedDice();
+    }
+    
 });
 
 document.getElementById('reset-dice').addEventListener('click', function() {
@@ -7,7 +11,9 @@ document.getElementById('reset-dice').addEventListener('click', function() {
     resetSelections();
 });
 
-/*function to roll the dics */
+let rolls_left = 3;
+
+/*function to roll the dice */
 function rollDice(numberOfDice, keep) {
     let rolls = [];
     for (let i = 0; i < numberOfDice; i++) {
@@ -28,6 +34,8 @@ function rollNotSelectedDice() {
         keep.push(checkbox.checked);
     }
     let results = rollDice(5, keep);
+    rolls_left --;
+    updateRollsLeftDisplay();
     displayResults(results, keep);
 }
 
@@ -39,12 +47,18 @@ function displayResults(rolls, keep) {
         }
     });
 }
+/* function to update the display of rolls left*/
+function updateRollsLeftDisplay() {
+    document.getElementById('rolls-left').textContent = `Rolls Left: ${rolls_left}`;
+}
 /*clear all dice*/
 function resetDice() {
     for (let i = 1; i <= 5; i++) {
         const diceElement = document.getElementById(`dice-${i}`);
         diceElement.firstChild.textContent = '0'; // Resets each dice display
     }
+    rolls_left = 3;
+    updateRollsLeftDisplay();
 }
 /*uncheck the checkboxes*/
 function resetSelections() {
